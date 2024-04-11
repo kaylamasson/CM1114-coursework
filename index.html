@@ -1,8 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+<!--
+
+    Threat model - login on home page
+
+    Threat source - external
+    Threat agent - human
+    Threat intention - intentional
+    Threat motivation - embarrassment of society
+    Threat impact - 
+    
+-->
+
     <head>
-        <!-- Declare haracter set -->
+        <!-- Declare character set -->
       
         <meta charset="utf-8">
 
@@ -23,34 +36,36 @@
             <img id="logo" src="images/wool_logo.png" alt="Simple purple ball of wool logo" width="50" height="50">
             <h1 id="title"> Crochet Society </h1>
 
-            <form id="login">
+            <!-- Log-in form -->
+        <div id="login">
+            <form>
                 <fieldset>
                     <input type="email" name="email" placeholder="Email">
                     <input type="password" name="password" placeholder="Password">
-                    <button id="button" type="button" onclick="login()">Login</button>
+                    <button type="button" onclick="login()">Login</button>
 
-                    <script>  
-
+                    <script>
+                
                     // Login button switches between logging user in and out 
 
-                        var counter = 2;
+                    var counter = 2;
+                    function login(){
 
-                        //If counter is even then the button logs user in
-                        //else it logs out 
+                      //If counter is even then the button logs user in
+                      //else it logs out 
 
-                        function login(){
-                            if (counter%2 == 0){
-                                alert('You have been logged in!')
-                                button = "Login"
-                            } else {
-                                alert('You have been logged out!')
-                            }
-                            counter += 1;
+                        if (counter%2 == 0){
+                            alert('You have been logged in!')
+                        } else {
+                            alert('You have been logged out!')
                         }
+                        counter += 1;
+                    }
                     </script>
-                    
                 </fieldset>
             </form>
+        </div>
+            
         
         </header>
 
@@ -58,11 +73,14 @@
             
         <nav>
             <ul>
-                <li class="active"> <a href="index.html"> Home </a></li>
+                <li class="active"><a href="index.html"> Home </a></li>
                 <li> <a href="img_gallery.html"> Image Gallery </a></li>
-                <li> <a href="current_members.html"> Current Members</a> </li>
+                <li> <a href="current_members.html">Members</a> </li>
                 <li> <a href="event_calendar.html"> Events </a> </li>
                 <li> <a href="contact_us.html"> Contact Us </a> </li>
+                <li> <a href = "tutorials.html">Tutorials</a></li>
+                <li> <a href="materials.html">Materials</a></li>
+
                 
             </ul>
 
@@ -83,7 +101,6 @@
                     <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-
                 </div>
 
 
@@ -131,9 +148,8 @@
 
             <!-- Left column with welcome paragraph-->
 
-            <div id="left-col">
-                <h3> Welcome! </h3>
-
+            <div class="left-col">
+                <h3><b>Welcome</b></h3>
                 <p> Welcome to the RGU's Crochet Society! Whether you are looking to pick up a new skill or you are wanting a way to relax and wind down, our crochet society is perfect for you!  </p>
                 <p> We meet up regularly to crochet and chat, as well as having fun nights out to get to know each other!</p>
                 <p> Everyone, from experienced crocheters to complete beginners, is welcome so come and join us!</p>
@@ -141,13 +157,16 @@
 
             <!-- Right column with latest tweets -->
     
-            <div id="right-col"> 
-                <h3> Latest Tweets</h3>
-                <a class="twitter-timeline" data-width="300" data-height="500" href="https://twitter.com/InsideCrochet?ref_src=twsrc%5Etfw">Tweets by InsideCrochet</a> <script async src="https://platform.twitter.com/widgets.js"></script>
+            <div class="right-col"> 
+                <h3><b>Latest News</b></h3>
+                <img id="news-image" src="images/trophy.jpg" width = 175 height = 175>
+                <h4 id="headline"><u>Vote for us!</u></h4>
+                <p> The Crochet Society been nominated for RGU Society of the Year! </p> <br>
+                <p> You can vote for by visiting the link: <a href="index.html"> Vote Here!</a></p> 
             </div>
         </main>
 
-        <footer> Copyright Kayla Masson </footer>
+        <footer> Copyright Kayla Masson 2024 </footer>
 
     </body>
 

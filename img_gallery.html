@@ -18,54 +18,27 @@
     <body> 
 
 
-        <header> 
+      <header> 
 
           <!-- Logo image and webpage title -->
 
           <img id="logo" src="images/wool_logo.png" alt="Simple purple ball of wool logo" width="50" height="50">
           <h1 id="title"> Crochet Society </h1>
 
-          <!-- Log-in form -->
-          <form id="login">
-              <fieldset>
-                  <input type="email" name="email" placeholder="Email">
-                  <input type="password" name="password" placeholder="Password">
-                  <button type="button" onclick="login()">Login</button>
-
-                  <script>
-                  
-                  // Login button switches between logging user in and out 
-
-                      var counter = 2;
-                      function login(){
-
-                        //If counter is even then the button logs user in
-                        //else it logs out 
-
-                          if (counter%2 == 0){
-                              alert('You have been logged in!')
-                          } else {
-                              alert('You have been logged out!')
-                          }
-                          counter += 1;
-                      }
-                  </script>
-                  
-              </fieldset>
-          </form>
-      
       </header>
 
       <!-- Navigation bar -->
             
         <nav> 
-
             <ul>
                 <li> <a href="index.html"> Home </a></li>
                 <li class="active"><a href="img_gallery.html"> Image Gallery </a></li>
                 <li> <a href="current_members.html"> Current Members</a> </li>
                 <li> <a href="event_calendar.html"> Events </a> </li>
                 <li> <a href="contact_us.html"> Contact Us </a> </li>
+                <li> <a href = "tutorials.html">Tutorials</a></li>
+                <li> <a href="materials.html">Materials</a></li>
+
             </ul>
 
         </nav>
@@ -152,7 +125,7 @@
           </script>
 
 
-        <footer>Copyright Kayla Masson</footer>
+        <footer>Copyright Kayla Masson 2024</footer>
 
     </body>
 </html>

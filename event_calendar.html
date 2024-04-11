@@ -2,7 +2,7 @@
 <html lang="en">
 
     <head>
-        <!-- Declare haracter set -->
+        <!-- Declare character set -->
       
         <meta charset="utf-8">
 
@@ -23,35 +23,6 @@
         <header> 
             <img id="logo" src="images/wool_logo.png" alt="Simple purple ball of wool logo" width="50" height="50">
             <h1 id="title"> Crochet Society </h1>
-
-            <form id="login">
-                <fieldset>
-                    <input type="email" name="email" placeholder="Email">
-                    <input type="password" name="password" placeholder="Password">
-                    <button type="button" onclick="login()"> Login </button>
-
-                    <script> 
-
-                    // Login button switches between logging user in and out 
-
-
-                        var counter = 2;
-
-                        //If counter is even then the button logs user in
-                        //else it logs out 
-
-                        function login(){
-                            if (counter%2 == 0){
-                                alert('You have been logged in!')
-                            } else {
-                                alert('You have been logged out!')
-                            }
-                            counter += 1;
-                        }
-                    </script>
-                    
-                </fieldset>
-            </form>
         
         </header> 
         
@@ -65,6 +36,9 @@
                 <li> <a href="current_members.html"> Current Members</a> </li>
                 <li class="active"> <a href="event_calendar.html"> Events </a> </li>
                 <li> <a href="contact_us.html"> Contact Us </a> </li>
+                <li> <a href = "tutorials.html">Tutorials</a></li>
+                <li> <a href="materials.html">Materials</a></li>
+
             </ul>
 
         </nav>
@@ -139,7 +113,38 @@
 
         </main>
 
-        <footer>Copyright Kayla Masson</footer>
+        <div class="left-col">
+            <p> Want to recommend an event? Tell us below! </p>
+            <form name="events">
+                <fieldset>
+                    <label>Event name: </label>
+                    <input type="text" name="event-title" value=""> <br>
+                    
+                    <label> Date: </label>
+                    <input type="date" name="event-date" value="">
+
+                    <button type="button" onclick="submit_event()"> Submit Event </button>
+
+                </fieldset>
+            </form>
+        </div>
+
+        <script>
+
+            function submit_event(){
+                var title = document.forms["events"]["event-title"].value
+                var date = document.forms["events"]["event-date"].value
+                if (title == ""){
+                    alert("An event must have a title!");
+                } else if (date.length == 0){
+                    alert("An event must have a date!");
+                } else {
+                    alert("Event submitted! The society will contact you soon.");
+                }
+            }
+        </script>
+
+        <footer>Copyright Kayla Masson 2024</footer>
 
     </body>
 </html>
