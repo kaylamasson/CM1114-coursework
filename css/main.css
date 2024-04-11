@@ -1,13 +1,13 @@
 body {
     background-color:#ffc2dc;
+    margin:0px;
 }
 
 header {
     background-color:#ffe5f1;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    padding:10px;
-    margin-top: 20px;
+    padding:20px;
 }
 
 h1,h2,h3,h4,h5,h6,p {
@@ -29,8 +29,14 @@ h3 {
     padding-left:10px;
 }
 
+h4 {
+    font-size: large;
+}
+
+
 .div-background{
     background-color: #ffe5f1;
+    padding: 10px;
 }
 
 main {
@@ -53,13 +59,17 @@ footer {
     padding-left:10px;
 }
 
+nav {
+    padding: 0px;
+    margin: 0px;
+}
 
 nav ul {
     margin: 0px;
     padding: 0px;
     overflow: hidden;
     background-color:#EBE6FF;
-
+    width:100%;
 }
 
 nav li {
@@ -67,14 +77,16 @@ nav li {
     list-style-type: none;
     font-family: Arial, Helvetica, sans-serif;
     float:left;
-    width:15%;
+    width:14.28%;
     padding:10px;
+    display: block;
+    text-align:center;
+
 }
 
 
 nav li a{
     color:#000000;
-    text-align:center;
     text-decoration: none;
 }
 
@@ -97,6 +109,19 @@ table {
     background-color: #FFFFFF;
 }
 
+table td, table th {
+    text-align: center;
+    width:200px;
+    height:100px;
+    padding:10px;
+}
+
+
+table tr {
+    width:50px;
+
+}
+
 tr:nth-child(even){
     background-color: #F2F2F2;
 }
@@ -104,14 +129,11 @@ tr:nth-child(even){
 
 tr:hover{
     background-color:#EBE6FF;
-    ;
 }
 
-
-
 th {
-    background-color:#DBCFFD;
-    color: white;
+    background-color:#ffe5f1;
+    color: black;
 }
 
 .center {
@@ -132,10 +154,6 @@ figcaption {
     font-style: italic;
 }
 
-td {
-    padding-left:40px;
-}
-
 
 #logo { 
     float:left;
@@ -146,7 +164,7 @@ td {
     display:inline;
 }
 
-#left-col {
+.left-col {
     background-color: #ffe5f1;
     margin:10px;
     float:left;
@@ -155,7 +173,7 @@ td {
     padding:10px;
 }
 
-#right-col {
+.right-col {
     background-color: #ffe5f1;
     float:right;
     margin:10px;
@@ -201,12 +219,34 @@ td {
     text-align: center;
 }
 
-
 #login {
     float:right;
 }
 
+#news-image {
+    float:left;
+}
+
+#headline {
+    text-align: center;
+}
+
+.material-img {
+    width: 50%;
+    height: 100%;
+}
+
+#materials { 
+    margin: 10px;
+}
+
+#materials .row {
+    margin:10px;
+}
 
 
-
-
+div iframe {
+    width: 25%;
+    float: left;
+    padding: 10px;
+}
