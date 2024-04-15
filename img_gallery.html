@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--
+
+    Threat model - images on image gallery
+
+    Threat source - external
+    Threat agent - human
+    Threat intention - intentional
+    Threat motivation - embarrassment and downfall of society
+    Threat impact - images on the image gallery could be changed to irrelevant or inappropriate images to ruin the society's image
+    Threat mitigation - ensure only members of society (captain/vice captain) have the ability to edit images 
+    
+-->
+
     <head>
 
       <!-- Declare character set -->
@@ -13,6 +26,12 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <link rel='stylesheet' href='css/main.css'>
+
+        <!-- Linking Google Font for Webpage Title -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Jersey+20&display=swap" rel="stylesheet">
+
     </head>
 
     <body> 
@@ -61,13 +80,13 @@
 
                 <div class="row">
                   <div class="col-sm">
-                    <img onmouseover = "highlight(this)" onload = "delight(this)" onmouseout="delight(this)" src = "images/funky2.jpg" alt="Crochet multi-coloured granny squares with funky patterns." class="gallery-img">
+                    <img title="funky" onmouseover = "highlight(this)" onload = "delight(this)" onmouseout="delight(this)" src = "images/funky2.jpg" alt="Crochet multi-coloured granny squares with funky patterns." class="gallery-img">
                   </div>
                   <div class="col-sm">
-                    <img onmouseover ="highlight(this)" onload = "delight(this)" onmouseout = "delight(this)" src="images/blanket.jpg" alt="Bright rainbow-coloured granny square blanket." class="gallery-img">
+                    <img onmouseover = "highlight(this)" onload = "delight(this)" onmouseout = "delight(this)" src="images/blanket.jpg" alt="Bright rainbow-coloured granny square blanket." class="gallery-img">
                   </div>
                   <div class="col-sm">
-                    <img onmouseover ="highlight(this)" onload = "delight(this)" onmouseout = "delight(this)" src="images/amigurumi2.png" alt="Cute Crochet Food" class="gallery-img">
+                    <img onmouseover = "highlight(this)" onload = "delight(this)" onmouseout = "delight(this)" src="images/amigurumi2.png" alt="Cute Crochet Food" class="gallery-img">
                   </div>
                 </div>
 
@@ -75,13 +94,13 @@
 
                 <div class="row">
                     <div class="col-sm">
-                        <img onmouseover ="highlight(this)" onload = "delight(this)" onmouseout = "delight(this)" src="images/bags.jpg"  alt="Crochet mini checkerboard bags in orange, blue, purple and green, each with a flower on the front." class="gallery-img">
+                        <img onmouseover = "highlight(this)" onload = "delight(this)" onmouseout = "delight(this)" src="images/bags.jpg"  alt="Crochet mini checkerboard bags in orange, blue, purple and green, each with a flower on the front." class="gallery-img">
                     </div>
                     <div class="col-sm">
-                        <img onmouseover ="highlight(this)" onload = "delight(this)" onmouseout = "delight(this)" src="images/frogs.jpg" alt="An assortment of pink, red and green crochet frogs." class="gallery-img">
+                        <img onmouseover = "highlight(this)" onload = "delight(this)" onmouseout = "delight(this)" src="images/frogs.jpg" alt="An assortment of pink, red and green crochet frogs." class="gallery-img">
                     </div>
                     <div class="col-sm">
-                      <img onmouseover ="highlight(this)" onload = "delight(this)" onmouseout = "delight(this)" src="images/funky1.jpg" alt="Crochet multi-coloured granny squares with funky patterns." class="gallery-img">
+                      <img onmouseover = "highlight(this)" onload = "delight(this)" onmouseout = "delight(this)" src="images/funky1.jpg" alt="Crochet multi-coloured granny squares with funky patterns." class="gallery-img">
                     </div>
                   </div>
 
@@ -125,7 +144,7 @@
           </script>
 
 
-        <footer>Copyright Kayla Masson 2024</footer>
+        <footer>Copyright © Kayla Masson 2024</footer>
 
     </body>
 </html>

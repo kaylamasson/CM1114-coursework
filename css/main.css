@@ -16,8 +16,11 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 h1 { 
-    font-size: xx-large;
+    font-family: "Jersey 10 Charted", sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
+  
 
 p {
     font-size: medium;
@@ -27,6 +30,7 @@ p {
 h3 { 
     font-size: larger;
     padding-left:10px;
+    font-weight:600;
 }
 
 h4 {
@@ -41,6 +45,7 @@ h4 {
 
 main {
     border-radius: 10px;
+    padding: 10px;
 }
 
 aside {
@@ -191,6 +196,15 @@ figcaption {
     margin-bottom: 10px;
 }
 
+.carousel-caption{
+    background-color: #ffe5f1;
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+    width: 100px;
+    height: auto;
+}
+
 
 #left-button {
     margin-left:20%;
@@ -244,9 +258,19 @@ figcaption {
     margin:10px;
 }
 
-
 div iframe {
-    width: 25%;
     float: left;
-    padding: 10px;
+    margin-left: 15%;
+}
+
+
+.video-text {
+    font-size: larger;
+    clear: both;
+    text-align: center;
+
+}
+
+.row {
+    padding:10px;
 }
