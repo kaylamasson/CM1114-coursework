@@ -35,7 +35,6 @@
         <!-- Navigation bar-->
 
         <nav> 
-
             <ul>
                 <li> <a href="index.html"> Home </a></li>
                 <li> <a href="img_gallery.html"> Image Gallery </a></li>
@@ -44,9 +43,7 @@
                 <li> <a href="contact_us.html"> Contact Us </a> </li>
                 <li> <a href = "tutorials.html">Tutorials</a></li>
                 <li> <a href="materials.html">Materials</a></li>
-
             </ul>
-
         </nav>
 
         <main> 
@@ -123,6 +120,7 @@
 
         </main>
 
+        <!-- Event recommendation form -->
         <div class="left-col">
             <p> Want to recommend an event? Tell us below! </p>
             <form name="events">
@@ -141,6 +139,8 @@
 
         <script>
 
+            //Input validation for event form
+            //Form must contain title and date before submitting
             function submit_event(){
                 var title = document.forms["events"]["event-title"].value
                 var date = document.forms["events"]["event-date"].value

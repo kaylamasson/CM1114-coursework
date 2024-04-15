@@ -56,14 +56,11 @@
                 <h3> Contact Us! </h3>
             </div>
 
-            <div>
-                <p>Want to join the society?</p>
-            </div>
 
             <!-- Contact form -->
 
             <div class="left-col">
-                <form>
+                <form name="contact-form">
                     <fieldset>
                         <legend>Contact us using the form below.</legend>
                         <label> Name </label>
@@ -85,11 +82,21 @@
                         <script> 
 
                         // Function which displays "Form has been submitted successfully!" 
-                        // when submit button is pressed 
+                        // when submit button is pressed and name/email is entered
 
                             function send_form(id,content){
                                 var container = document.getElementById(id)
-                                container.innerHTML = content;
+                                var name = document.forms["contact-form"]["name"].value
+                                var email = document.forms["contact-form"]["email"].value
+                                var comments = document.forms["contact-form"]["comments"].value
+
+                                if (name == ""){
+                                    alert("You must enter your name.");
+                                } else if (email == ""){
+                                    alert("You must enter your email.");
+                                }  else {
+                                    container.innerHTML = content;
+                                }
                             }
                         </script>
                     </fieldset>
@@ -97,11 +104,10 @@
                 <p id="form_outcome"> </p>
             </div>
 
+            <!-- Twitter timeline -->
             <div class = "right-col">
                 <h3> Latest Tweets</h3>
-                <a class="twitter-timeline" data-width="300" data-height="500" data-theme="light" href="https://twitter.com/InsideCrochet?ref_src=twsrc%5Etfw">Tweets by InsideCrochet</a> <script async src="https://platform.twitter.com/widgets.js"></script> 
-            </div>
-            
+                <a class="twitter-timeline" data-width="300" data-height="400" href="https://twitter.com/InsideCrochet?ref_src=twsrc%5Etfw">Tweets by InsideCrochet</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>            </div>
         </main>
 
         <footer>Copyright © Kayla Masson 2024</footer>
